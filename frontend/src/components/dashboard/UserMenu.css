@@ -1,0 +1,94 @@
+.user-menu {
+  position: relative;
+  flex-shrink: 0;
+}
+
+.user-menu__trigger {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  border: none;
+  background: transparent;
+  padding: 0;
+  cursor: pointer;
+  color: #64748b;
+}
+
+.user-menu__avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: #dbeafe;
+  color: #1d4ed8;
+  display: grid;
+  place-items: center;
+  font-weight: 800;
+  font-size: var(--fs-md);
+  box-shadow: 0 0 0 1px #bfdbfe;
+}
+
+.user-menu__chevron {
+  display: inline-flex;
+  transition: transform 0.15s ease;
+}
+
+.user-menu.is-open .user-menu__chevron {
+  transform: rotate(180deg);
+}
+
+.user-menu__dropdown {
+  position: absolute;
+  top: calc(100% + 10px);
+  right: 0;
+  z-index: 40;
+  min-width: 220px;
+  padding: 8px;
+  border-radius: 14px;
+  background: #fff;
+  border: 1px solid #e2e8f0;
+  box-shadow: 0 16px 40px rgba(15, 23, 42, 0.14);
+}
+
+.user-menu__item {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  border: none;
+  background: transparent;
+  border-radius: 10px;
+  padding: 11px 12px;
+  color: #334155;
+  font: inherit;
+  font-size: var(--fs-base);
+  font-weight: 600;
+  text-align: left;
+  cursor: pointer;
+}
+
+.user-menu__item:hover {
+  background: #f8fafc;
+}
+
+.user-menu__item svg {
+  flex-shrink: 0;
+  color: #64748b;
+}
+
+.user-menu__divider {
+  height: 1px;
+  margin: 6px 4px;
+  background: #e2e8f0;
+}
+
+.user-menu__item--danger {
+  color: #e11d48;
+}
+
+.user-menu__item--danger svg {
+  color: #e11d48;
+}
+
+.user-menu__item--danger:hover {
+  background: #fff1f2;
+}

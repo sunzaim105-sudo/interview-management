@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap');
+
+:root {
+  --blue: #0066ff;
+  --blue-dark: #0052cc;
+  --blue-soft: #e8f1ff;
+  --blue-border: #b3d1ff;
+  --blue-label: #1a66d6;
+  --green: #22c55e;
+  --text: #0f172a;
+  --text-muted: #64748b;
+  --text-soft: #94a3b8;
+  --border: #e2e8f0;
+  --bg: #ffffff;
+  --bg-subtle: #f8fafc;
+  --radius: 16px;
+  --radius-sm: 10px;
+  --shadow: 0 12px 40px rgba(15, 23, 42, 0.08);
+
+  /* Type scale — use these everywhere for consistency */
+  --fs-xs: 0.6875rem; /* 11px — captions, badges, calendar meta */
+  --fs-sm: 0.75rem; /* 12px — helpers, table headers, chips */
+  --fs-md: 0.8125rem; /* 13px — form labels, compact body */
+  --fs-base: 0.875rem; /* 14px — body, nav, buttons, inputs */
+  --fs-lg: 1rem; /* 16px — section titles */
+  --fs-xl: 1.25rem; /* 20px — modal / card titles */
+  --fs-2xl: 1.5rem; /* 24px — page titles */
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: var(--fs-base);
+  color: var(--text);
+  background: var(--bg);
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+button,
+input,
+select,
+textarea,
+a {
+  font-family: inherit;
+  font-size: inherit;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+.auth-loading {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  color: var(--text-muted);
+  font-size: var(--fs-base);
+}
+
+/* Shared page typography helpers */
+.page-title {
+  font-size: var(--fs-2xl);
+  font-weight: 800;
+  letter-spacing: -0.03em;
+  color: var(--text);
+}
+
+.page-subtitle {
+  margin-top: 4px;
+  font-size: var(--fs-base);
+  color: var(--text-muted);
+}
+
+.section-title {
+  font-size: var(--fs-lg);
+  font-weight: 800;
+  color: var(--text);
+}
+
+.modal-title {
+  font-size: var(--fs-xl);
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  color: var(--text);
+}
+
+.label-text {
+  font-size: var(--fs-md);
+  font-weight: 700;
+  color: #1f2937;
+}
+
+.helper-text {
+  font-size: var(--fs-sm);
+  color: var(--text-soft);
+}
+
+.caption-text {
+  font-size: var(--fs-xs);
+  color: var(--text-muted);
+}

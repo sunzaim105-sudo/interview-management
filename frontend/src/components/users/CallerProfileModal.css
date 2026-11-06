@@ -1,0 +1,127 @@
+.caller-modal-backdrop {
+  position: fixed;
+  inset: 0;
+  z-index: 70;
+  background: rgba(15, 23, 42, 0.45);
+  display: grid;
+  place-items: center;
+  padding: 16px;
+}
+
+.caller-modal {
+  width: min(520px, 100%);
+  max-height: min(92vh, 780px);
+  overflow: auto;
+  background: #fff;
+  border-radius: 16px;
+  border: 1px solid #e2e8f0;
+  box-shadow: 0 24px 60px rgba(15, 23, 42, 0.2);
+}
+
+.caller-modal__head {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 16px 18px;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.caller-modal__eyebrow {
+  margin: 0 0 4px;
+  font-size: var(--fs-xs);
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #94a3b8;
+}
+
+.caller-modal__head h2 {
+  font-size: var(--fs-lg);
+  color: #0f172a;
+}
+
+.caller-modal__close {
+  border: none;
+  background: transparent;
+  font-size: 22px;
+  line-height: 1;
+  color: #94a3b8;
+  cursor: pointer;
+}
+
+.caller-modal__form {
+  padding: 16px 18px 18px;
+  display: grid;
+  gap: 12px;
+}
+
+.caller-modal__form label {
+  display: grid;
+  gap: 6px;
+}
+
+.caller-modal__form label span {
+  font-size: var(--fs-xs);
+  font-weight: 700;
+  color: #64748b;
+}
+
+.caller-modal__form input,
+.caller-modal__form textarea {
+  border: 1px solid #e2e8f0;
+  border-radius: 10px;
+  padding: 9px 11px;
+  font: inherit;
+  font-size: var(--fs-sm);
+  color: #0f172a;
+  background: #fff;
+}
+
+.caller-modal__form textarea {
+  resize: vertical;
+  min-height: 72px;
+}
+
+.caller-modal__error {
+  padding: 10px 12px;
+  border-radius: 10px;
+  background: #fef2f2;
+  color: #b91c1c;
+  border: 1px solid #fecaca;
+  font-size: var(--fs-sm);
+}
+
+.caller-modal__actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 8px;
+  margin-top: 4px;
+}
+
+.caller-btn-ghost,
+.caller-btn-primary {
+  border-radius: 10px;
+  padding: 9px 14px;
+  font: inherit;
+  font-weight: 700;
+  font-size: var(--fs-sm);
+  cursor: pointer;
+}
+
+.caller-btn-ghost {
+  border: 1px solid #e2e8f0;
+  background: #fff;
+  color: #334155;
+}
+
+.caller-btn-primary {
+  border: none;
+  background: var(--blue);
+  color: #fff;
+}
+
+.caller-btn-primary:disabled {
+  opacity: 0.65;
+  cursor: default;
+}

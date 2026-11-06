@@ -1,0 +1,124 @@
+.user-modal-backdrop {
+  position: fixed;
+  inset: 0;
+  z-index: 70;
+  background: rgba(15, 23, 42, 0.45);
+  display: grid;
+  place-items: center;
+  padding: 16px;
+}
+
+.user-modal {
+  width: min(480px, 100%);
+  background: #fff;
+  border-radius: 16px;
+  border: 1px solid #e2e8f0;
+  box-shadow: 0 24px 60px rgba(15, 23, 42, 0.2);
+  overflow: hidden;
+}
+
+.user-modal__head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 16px 18px;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.user-modal__head h2 {
+  font-size: var(--fs-lg);
+  color: #0f172a;
+}
+
+.user-modal__close {
+  border: none;
+  background: transparent;
+  font-size: 22px;
+  line-height: 1;
+  color: #94a3b8;
+  cursor: pointer;
+}
+
+.user-modal__form {
+  padding: 16px 18px 18px;
+  display: grid;
+  gap: 12px;
+}
+
+.user-modal__form label {
+  display: grid;
+  gap: 6px;
+}
+
+.user-modal__form label span {
+  font-size: var(--fs-xs);
+  font-weight: 700;
+  color: #64748b;
+}
+
+.user-modal__form input,
+.user-modal__form select {
+  border: 1px solid #e2e8f0;
+  border-radius: 10px;
+  padding: 9px 11px;
+  font: inherit;
+  font-size: var(--fs-sm);
+  color: #0f172a;
+  background: #fff;
+}
+
+.user-modal__row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+
+.user-modal__error {
+  padding: 10px 12px;
+  border-radius: 10px;
+  background: #fef2f2;
+  color: #b91c1c;
+  border: 1px solid #fecaca;
+  font-size: var(--fs-sm);
+}
+
+.user-modal__actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 8px;
+  margin-top: 4px;
+}
+
+.user-btn-ghost,
+.user-btn-primary {
+  border-radius: 10px;
+  padding: 9px 14px;
+  font: inherit;
+  font-weight: 700;
+  font-size: var(--fs-sm);
+  cursor: pointer;
+}
+
+.user-btn-ghost {
+  border: 1px solid #e2e8f0;
+  background: #fff;
+  color: #334155;
+}
+
+.user-btn-primary {
+  border: none;
+  background: var(--blue);
+  color: #fff;
+}
+
+.user-btn-primary:disabled {
+  opacity: 0.65;
+  cursor: default;
+}
+
+@media (max-width: 560px) {
+  .user-modal__row {
+    grid-template-columns: 1fr;
+  }
+}

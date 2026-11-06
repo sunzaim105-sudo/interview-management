@@ -1,0 +1,41 @@
+.placeholder-page {
+  min-height: 100vh;
+  padding: 28px;
+}
+
+.placeholder-page__header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.placeholder-page__header h1 {
+  font-size: var(--fs-2xl);
+  font-weight: 800;
+  letter-spacing: -0.03em;
+}
+
+.placeholder-page__header p {
+  margin-top: 6px;
+  color: #64748b;
+}
+
+.placeholder-page__panel {
+  margin-top: 24px;
+  border: 1px solid #e2e8f0;
+  border-radius: 16px;
+  padding: 28px;
+  background: #f8fafc;
+  max-width: 640px;
+}
+
+.placeholder-page__panel strong {
+  display: block;
+  margin-bottom: 6px;
+  color: #0f172a;
+}
+
+.placeholder-page__panel p {
+  color: #64748b;
+}

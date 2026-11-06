@@ -1,0 +1,286 @@
+.team-detail {
+  min-height: 100vh;
+  padding: 24px 28px 32px;
+  background: #fff;
+}
+
+.team-detail__header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 20px;
+}
+
+.team-detail__back {
+  border: none;
+  background: transparent;
+  color: var(--blue);
+  font: inherit;
+  font-weight: 700;
+  font-size: var(--fs-md);
+  padding: 0;
+  margin-bottom: 8px;
+  cursor: pointer;
+}
+
+.team-detail__header h1 {
+  font-size: var(--fs-2xl);
+  font-weight: 800;
+  letter-spacing: -0.03em;
+  color: #0f172a;
+}
+
+.team-detail__header p {
+  margin-top: 4px;
+  color: #64748b;
+}
+
+.team-detail__error {
+  margin-bottom: 14px;
+  padding: 10px 12px;
+  border-radius: 10px;
+  background: #fef2f2;
+  color: #b91c1c;
+  border: 1px solid #fecaca;
+}
+
+.team-detail__status {
+  color: #64748b;
+}
+
+.team-detail__grid {
+  display: grid;
+  grid-template-columns: minmax(280px, 360px) 1fr;
+  gap: 18px;
+  align-items: start;
+}
+
+.team-detail__card {
+  border: 1px solid #e2e8f0;
+  border-radius: 16px;
+  background: #fcfdff;
+  padding: 22px;
+}
+
+.team-detail__identity {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding-bottom: 16px;
+  margin-bottom: 8px;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.team-detail__avatar {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background: #dbeafe;
+  color: #1d4ed8;
+  display: grid;
+  place-items: center;
+  font-weight: 800;
+  font-size: var(--fs-lg);
+}
+
+.team-detail__identity h2 {
+  font-size: var(--fs-lg);
+  font-weight: 800;
+  color: #0f172a;
+}
+
+.team-detail__identity p {
+  margin-top: 2px;
+  color: #64748b;
+}
+
+.team-detail__fields {
+  display: grid;
+  gap: 2px;
+  margin: 0;
+}
+
+.team-detail__field {
+  display: grid;
+  grid-template-columns: 140px 1fr;
+  gap: 12px;
+  padding: 12px 4px;
+  border-bottom: 1px solid #f1f5f9;
+}
+
+.team-detail__field:last-child {
+  border-bottom: none;
+}
+
+.team-detail__field dt {
+  color: #64748b;
+  font-size: var(--fs-md);
+  font-weight: 600;
+}
+
+.team-detail__field dd {
+  margin: 0;
+  color: #0f172a;
+  font-size: var(--fs-base);
+  font-weight: 650;
+  word-break: break-word;
+}
+
+.team-detail__field a {
+  color: var(--blue);
+}
+
+.team-detail__resume-head,
+.team-detail__job-head {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+.team-detail__resume-head h2,
+.team-detail__job-head h2 {
+  font-size: var(--fs-lg);
+  font-weight: 800;
+  color: #0f172a;
+}
+
+.team-detail__resume-head p,
+.team-detail__job-head p {
+  margin-top: 4px;
+  color: #64748b;
+}
+
+.team-detail__upload {
+  position: relative;
+  overflow: hidden;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  background: var(--blue);
+  color: #fff;
+  font-weight: 700;
+  font-size: var(--fs-md);
+  padding: 10px 14px;
+  cursor: pointer;
+  box-shadow: 0 8px 18px rgba(0, 102, 255, 0.22);
+}
+
+.team-detail__upload input {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.team-detail__resume-frame {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.team-detail__resume-frame iframe {
+  width: 100%;
+  min-height: 640px;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  background: #fff;
+}
+
+.team-detail__resume-link {
+  color: var(--blue);
+  font-weight: 700;
+  font-size: var(--fs-base);
+}
+
+.team-detail__resume-empty {
+  border: 1px dashed #cbd5e1;
+  border-radius: 12px;
+  padding: 48px 20px;
+  text-align: center;
+  color: #64748b;
+  background: #fff;
+}
+
+.team-detail__grid--job {
+  grid-template-columns: minmax(240px, 300px) minmax(0, 1fr);
+  align-items: stretch;
+}
+
+.team-detail__job-meta {
+  max-width: 300px;
+}
+
+.team-detail__fields--stack .team-detail__field {
+  grid-template-columns: 1fr;
+  gap: 4px;
+  padding: 8px 0;
+}
+
+.team-detail__job-preview {
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.team-detail__job-preview-head {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.team-detail__job-preview-head h2 {
+  font-size: var(--fs-lg);
+  font-weight: 800;
+  color: #0f172a;
+}
+
+.team-detail__job-preview-head p {
+  margin-top: 4px;
+  color: #64748b;
+}
+
+.team-detail__job-frame {
+  flex: 1;
+  min-height: 720px;
+}
+
+.team-detail__job-frame iframe {
+  width: 100%;
+  height: 100%;
+  min-height: 720px;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  background: #fff;
+}
+
+@media (max-width: 980px) {
+  .team-detail__grid,
+  .team-detail__grid--job {
+    grid-template-columns: 1fr;
+  }
+
+  .team-detail__job-meta {
+    max-width: none;
+  }
+}
+
+@media (max-width: 600px) {
+  .team-detail {
+    padding: 16px;
+  }
+
+  .team-detail__field {
+    grid-template-columns: 1fr;
+    gap: 4px;
+  }
+
+  .team-detail__resume-head {
+    flex-direction: column;
+  }
+}

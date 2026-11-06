@@ -1,0 +1,291 @@
+.users-page {
+  min-height: 100vh;
+  padding: 24px 28px 32px;
+  background: #fff;
+}
+
+.users-page__header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 18px;
+}
+
+.users-page__header h1 {
+  font-size: var(--fs-2xl);
+  font-weight: 800;
+  letter-spacing: -0.03em;
+  color: #0f172a;
+}
+
+.users-page__header p {
+  margin-top: 4px;
+  color: #64748b;
+  font-size: var(--fs-base);
+}
+
+.users-page__error {
+  margin-bottom: 14px;
+  padding: 10px 12px;
+  border-radius: 10px;
+  background: #fef2f2;
+  color: #b91c1c;
+  border: 1px solid #fecaca;
+}
+
+.users-page__status {
+  color: #64748b;
+  margin-bottom: 14px;
+}
+
+.users-panel {
+  border: 1px solid #e2e8f0;
+  border-radius: 16px;
+  background: #fcfdff;
+  overflow: hidden;
+}
+
+.users-panel--spaced {
+  margin-top: 18px;
+}
+
+.users-panel__toolbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 14px 16px;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.users-panel__toolbar h2 {
+  font-size: var(--fs-lg);
+  color: #0f172a;
+}
+
+.users-panel__toolbar p {
+  margin-top: 2px;
+  color: #64748b;
+  font-size: var(--fs-sm);
+}
+
+.users-panel__actions {
+  display: flex;
+  gap: 8px;
+}
+
+.users-btn-danger,
+.users-btn-primary {
+  border-radius: 10px;
+  padding: 9px 14px;
+  font: inherit;
+  font-weight: 700;
+  font-size: var(--fs-sm);
+  cursor: pointer;
+}
+
+.users-btn-danger {
+  border: 1px solid #fecaca;
+  background: #fff;
+  color: #b91c1c;
+}
+
+.users-btn-danger:disabled {
+  opacity: 0.5;
+  cursor: default;
+}
+
+.users-btn-primary {
+  border: none;
+  background: var(--blue);
+  color: #fff;
+}
+
+.users-btn-primary--small {
+  padding: 7px 12px;
+  font-size: var(--fs-xs);
+  border-radius: 10px;
+}
+
+.users-btn-primary:disabled {
+  opacity: 0.55;
+  cursor: default;
+}
+
+.users-btn-ghost {
+  border: 1px solid #e2e8f0;
+  background: #fff;
+  color: #334155;
+  border-radius: 10px;
+  padding: 7px 12px;
+  font: inherit;
+  font-weight: 700;
+  font-size: var(--fs-xs);
+  cursor: pointer;
+}
+
+.users-btn-ghost:disabled {
+  opacity: 0.55;
+  cursor: default;
+}
+
+.users-row-actions {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.users-table__value {
+  font-size: var(--fs-sm);
+  color: #334155;
+  font-weight: 600;
+}
+
+.users-table__value--status.is-allowed {
+  color: #15803d;
+}
+
+.users-table__value--status.is-suspended {
+  color: #b45309;
+}
+
+.users-table__value--status.is-blocked {
+  color: #b91c1c;
+}
+
+.users-table__value--status.is-pending {
+  color: #1d4ed8;
+}
+
+.users-table__link {
+  color: var(--blue);
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.users-table__link:hover {
+  text-decoration: underline;
+}
+
+.users-table__muted {
+  color: #64748b;
+  font-size: var(--fs-xs);
+}
+
+.callers-table {
+  min-width: 980px;
+}
+
+.users-table-wrap {
+  overflow: auto;
+}
+
+.users-table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 820px;
+}
+
+.users-table th,
+.users-table td {
+  padding: 12px 14px;
+  text-align: left;
+  border-bottom: 1px solid #eef2f7;
+  vertical-align: middle;
+  font-size: var(--fs-sm);
+  color: #334155;
+}
+
+.users-table th {
+  font-size: var(--fs-xs);
+  font-weight: 700;
+  color: #64748b;
+  background: #f8fafc;
+}
+
+.users-table__check {
+  width: 42px;
+}
+
+.users-table tr.is-selected {
+  background: #f8fbff;
+}
+
+.users-table__name {
+  font-weight: 800;
+}
+
+.users-table td strong.users-table__name--admin {
+  color: #7c3aed !important;
+}
+
+.users-table td strong.users-table__name--caller {
+  color: #2563eb !important;
+}
+
+.users-table td strong.users-table__name--team_member {
+  color: #0d9488 !important;
+}
+
+.users-table__you {
+  margin-left: 8px;
+  display: inline-flex;
+  align-items: center;
+  padding: 2px 8px;
+  border-radius: 999px;
+  background: #eff6ff;
+  color: var(--blue);
+  font-size: var(--fs-xs);
+  font-weight: 700;
+}
+
+.users-table__empty {
+  text-align: center !important;
+  color: #94a3b8;
+  padding: 28px 14px !important;
+}
+
+.users-inline-select {
+  min-width: 140px;
+  border: 1px solid #e2e8f0;
+  border-radius: 10px;
+  background: #fff;
+  padding: 8px 10px;
+  font: inherit;
+  font-size: var(--fs-sm);
+  color: #0f172a;
+}
+
+.users-inline-select--status.is-allowed {
+  border-color: #86efac;
+  background: #f0fdf4;
+  color: #166534;
+}
+
+.users-inline-select--status.is-suspended {
+  border-color: #fcd34d;
+  background: #fffbeb;
+  color: #92400e;
+}
+
+.users-inline-select--status.is-blocked {
+  border-color: #fca5a5;
+  background: #fef2f2;
+  color: #991b1b;
+}
+
+.users-inline-select--status.is-pending {
+  border-color: #cbd5e1;
+  background: #f8fafc;
+  color: #475569;
+}
+
+.users-table__sr {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+}
